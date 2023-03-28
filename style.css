@@ -1,0 +1,166 @@
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    background-image: url(./images/bg-stars.svg);
+    background-repeat: no-repeat;
+    background-color:rgb(13, 2, 20);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.title{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.81px;
+    letter-spacing: 6.14px;
+    text-align: center;
+    width: 327px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 142px;
+    gap: 54px;
+    margin-bottom: 284px;
+}
+.for_center{
+    display: flex;
+    gap: 16px;
+}
+.out{
+    color: #FB5E84;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+    position: relative;
+}
+.paragraph1{
+    display: flex;
+    gap: 42px;
+    margin-top: -49px;
+    padding-left: 22px;
+}
+.paragraph{
+    color: #8385A9;
+    font-size: 7px;
+    font-weight: 700;
+    line-height: 9.26px;
+    text-align: center;
+    letter-spacing: 2.96px;
+    
+}
+.box1,.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 37px;
+    font-weight: 700;
+    width: 70px;
+    height: 33px;
+    background-color:
+    rgba(52, 54, 80, 1);
+    border-radius: 5px;
+}
+.out::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    bottom: 29px; 
+}
+.out::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    bottom: 29px;
+}
+.box2{
+    margin-top: 1px;
+}
+.svg1 path:hover{
+    fill: #FB5E84;
+    cursor: pointer;
+}
+footer{
+    background-image: url(./images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;  
+    justify-self: flex-end;
+}
+.second{
+    padding-top: 32px;
+}
+.three{
+    padding-bottom: 34px;
+}
+
+@media(min-width:1440px){
+    .box1,.box2{
+        width: 148px;
+        height: 70px;
+        font-size: 67px;
+    }
+    .title{
+        font-size: 22px;
+        line-height: 29.11px;
+        width: 431px;
+        letter-spacing: 6.5px;
+    }
+    .paragraph{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.26px;
+        letter-spacing: 5.92px;
+    }
+    .paragraph1{
+        gap: 74px;
+        padding-left: 44px;
+        margin-top: -24px;
+    }
+    footer{
+        position: absolute;
+        bottom:0;
+    }
+    .second{
+        padding-top: 66px;
+    }
+    .three{
+        padding-bottom: 79px;
+    }
+    .box1,.box2{
+        border-radius: 10px;
+    }
+    .out{
+        position: relative;
+    }
+    .out::before{
+        content: "";
+        left: -7px;
+        width: 14px;
+        height: 14px;
+        bottom: 64px;
+        background-color: black;
+        position: absolute;
+    }
+    .out::after{
+        content: "";
+        right: -7px;
+        width: 14px;
+        height: 14px;
+        bottom: 64px;
+        background-color: black;
+        position: absolute;
+    }
+}
