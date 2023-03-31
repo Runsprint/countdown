@@ -10,7 +10,13 @@
 //newDate //getTime function
 //I need whats time is right now, for understand - start time and end time
 // text content or innerHTML
-console.log(one);
+let dayEl = document.getElementsByClassName("day");
+let hourEl = document.getElementsByClassName("hour");
+let minuteEl = document.getElementsByClassName("minute");
+let secondEl = document.getElementsByClassName("seconds");
+
+// let div1 = document.getElementsByClassName("box1");
+// let div2 = document.getElementsByClassName("box2");
 
 setInterval( ()=> {
     let timeEnd = new Date("June 15,2023 00:00:00"); //date is classname,we made new classname and = string
@@ -27,10 +33,27 @@ setInterval( ()=> {
     let timeHour = Math.floor((difference % day)/ hour);// we % for nashti and / for result.
     let timeMinute = Math.floor((difference % hour)/minute);
     let timeSecond = Math.floor((difference% minute) / second);
-
     console.log(timeDay,timeHour,timeMinute,timeSecond);
 
+    dayEl [0].textContent = timeDay;
+    dayEl [1].textContent = timeDay;
+    
+
+    hourEl[0].textContent = timeHour;
+    hourEl[1].textContent = timeHour;
+
+    minuteEl[0].textContent = timeMinute;
+    minuteEl[1].textContent = timeMinute;
+
+    secondEl[0].textContent = timeSecond;
+    secondEl[1].textContent = timeSecond;
+
+    // document.querySelector('.box2').style.transform
+    //                = 'rotate(180deg)';
+                   
+    
 }, 1000);
+
 
 
 
