@@ -163,12 +163,5 @@ footer{
         background-color: black;
         position: absolute;
     }
-    .out {
-        perspective: 500px;
-        transform-style: preserve-3d; 
-    } 
-    .box1{
-        transform: rotateX(180deg); 
-        /* transition:1500ms ease; */
-    }
+    
 }
