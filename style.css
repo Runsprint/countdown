@@ -83,6 +83,7 @@ main{
 }
 .box2{
     margin-top: 1px;
+    background-color: rgb(68, 75, 116);
 }
 .svg1 path:hover{
     fill: #FB5E84;
