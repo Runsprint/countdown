@@ -50,7 +50,7 @@ setInterval( ()=> {
     // secondEl.forEach(element => { 
     //     element.textContent= timeSecond;
     // });
-     //befor timer is over this will be message
+    //befor timer is over this will be message
     if (difference < 0){
         Array.from(dayEl).forEach(element => {
             element.textContent = "EX"
@@ -64,8 +64,10 @@ setInterval( ()=> {
         Array.from(secondEl).forEach(element => { 
             element.textContent= "ED";
         });
+    }
   
 }, 1000);
+
 
 
 
